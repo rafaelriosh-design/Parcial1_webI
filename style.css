@@ -1,0 +1,137 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    front-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+.section-title span {
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.section-title {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(recursos/imagenes/codigo.jpg) center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+
+}
+
+.btn {
+    background-color: #E74C3C;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #888;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+    flex-wrap: ;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 280px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+}
+
+.bg-teal { background-color: #1ABC9C;}
+.bg-orange { background-color: #E67E22;}
+.bg-blue {background-color: #3498DB;}
+.bg-green {background-color: #2ECC71;}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+
+}
+
+.portfolio-item {
+    flex: 0 0 calc(25% - 15px);
+    aspect-ratio: 1;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
